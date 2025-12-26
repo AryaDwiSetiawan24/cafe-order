@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8">
@@ -10,15 +10,8 @@
 
 <body class="bg-gray-100">
     <!-- NAVBAR -->
-    <nav class="flex items-center justify-between p-4 shadow bg-white">
-        <div class="font-bold text-xl text-yellow-600">CafeKu</div>
-        <ul class="flex gap-6">
-            <li><a href="/" class="hover:text-yellow-600">Home</a></li>
-            <li><a href="/menu" class="hover:text-yellow-600">Menu</a></li>
-            <li><a href="/cart" class="hover:text-yellow-600">Keranjang</a></li>
-        </ul>
-    </nav>
-
+    @include('partials.navbar')
+    
     <main>
         @yield('content')
     </main>

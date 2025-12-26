@@ -1,20 +1,25 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\user\MenuController;
+use App\Http\Controllers\user\OrderController;
 
-Route::get('/', function () {
-    return view('home');
+// contoh Landing Page
+Route::get('/landingpage', function () {
+    return view('landingpage');
 });
 
-Route::get('/menu', function () {
-    return view('menu');
+// user
+Route::view('/', 'pages.user.home');
+Route::get('/menu', [MenuController::class, 'index']);
+Route::get('/cart', [OrderController::class, 'cart']);
+
+// admin
+Route::prefix('admin')->group(function () {
+    Route::view('/', 'pages.admin.dashboard');
 });
 
-Route::get('/cart', function () {
-    return view('cart');
-});
-
-
-Route::get('/1', function () {
-    return view('home1');
+// pegawai
+Route::prefix('pegawai')->group(function () {
+    Route::view('/', 'pages.pegawai.dashboard');
 });
