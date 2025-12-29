@@ -1,8 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\user\HomeController;
 use App\Http\Controllers\user\MenuController;
 use App\Http\Controllers\user\OrderController;
+use App\Http\Controllers\admin\DashboardController;
+use App\Http\Controllers\Pegawai\PegawaiController;
 
 // contoh Landing Page
 Route::get('/landingpage', function () {
@@ -10,16 +13,16 @@ Route::get('/landingpage', function () {
 });
 
 // user
-Route::view('/', 'pages.user.home');
+Route::get('/', [HomeController::class, 'index']);
 Route::get('/menu', [MenuController::class, 'index']);
 Route::get('/cart', [OrderController::class, 'cart']);
 
 // admin
 Route::prefix('admin')->group(function () {
-    Route::view('/', 'pages.admin.dashboard');
+    Route::get('/', [DashboardController::class, 'index']);
 });
 
 // pegawai
 Route::prefix('pegawai')->group(function () {
-    Route::view('/', 'pages.pegawai.dashboard');
+    Route::get('/', [PegawaiController::class, 'index']);
 });

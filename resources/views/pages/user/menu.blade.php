@@ -85,7 +85,7 @@
                 { id: 8, name: 'Cappuccino', price: 18000, image: 'https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400' },
                 { id: 9, name: 'Cafe Latte', price: 20000, image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400' },
                 { id: 10, name: 'Matcha Latte', price: 22000, image: 'https://plus.unsplash.com/premium_photo-1695151556198-6b21eae6215d?q=80&w=483&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' },
-                { id: 11, name: 'Thai Tea', price: 12000, image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400' },
+                { id: 11, name: 'Ice Tea', price: 12000, image: 'https://images.unsplash.com/photo-1556679343-c7306c1976bc?w=400' },
                 { id: 12, name: 'Fresh Juice', price: 15000, image: 'https://images.unsplash.com/photo-1600271886742-f049cd451bba?w=400' }
             ],
             dessert: [

@@ -4,7 +4,7 @@
     <section class="relative h-screen bg-cover bg-center" 
         style="background-image:url('https://images.unsplash.com/photo-1504754524776-8f4f37790ca0');">
         <!-- Dark Overlay -->
-        <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+        <div class="absolute inset-0 bg-black/50"></div>
         
         <!-- Content -->
         <div class="relative h-full flex items-center justify-center px-6">
