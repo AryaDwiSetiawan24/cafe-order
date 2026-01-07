@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoffeEase - Discover The Art Of Perfect Coffee</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cafe Ku</title>
+    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@300;400;500;600;700&display=swap');
 
@@ -19,9 +20,9 @@
 </head>
 <body class="bg-amber-50">
     <!-- Navigation -->
-    <nav class="bg-zinc-900 text-white px-8 py-4">
+    <nav class="bg-zinc-900 text-white px-8 py-4 sticky top-0 z-50">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <div class="text-2xl font-display font-bold">Lelaku</div>
+            <div class="text-2xl font-display font-bold">Cafe Ku</div>
             <div class="hidden md:flex space-x-8 text-sm">
                 <a href="#home" class="hover:text-amber-400 transition">Home</a>
                 <a href="#about" class="hover:text-amber-400 transition">About Us</a>
@@ -172,7 +173,7 @@
                 <div>
                     <div class="text-amber-400 text-2xl mb-2">✉️</div>
                     <h3 class="font-semibold mb-2">Email</h3>
-                    <p class="text-gray-400">hello@lelaku.com<br>support@lelaku.com</p>
+                    <p class="text-gray-400">hello@cafeku.com<br>support@cafeku.com</p>
                 </div>
             </div>
         </div>
@@ -181,8 +182,8 @@
     <!-- Footer -->
     <footer class="bg-black text-gray-400 py-8 px-8 text-center">
         <div class="max-w-7xl mx-auto">
-            <div class="font-display text-2xl font-bold text-white mb-4">Lelaku</div>
-            <p>&copy; 2025 Lelaku. All rights reserved.</p>
+            <div class="font-display text-2xl font-bold text-white mb-4">Cafe Ku</div>
+            <p>&copy; 2025 Cafe Ku. All rights reserved.</p>
         </div>
     </footer>
 </body>
