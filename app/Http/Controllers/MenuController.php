@@ -1,7 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\user;
-use App\Http\Controllers\Controller;
+namespace App\Http\Controllers;
 
 class MenuController extends Controller
 {
