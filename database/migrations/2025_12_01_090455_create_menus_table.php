@@ -12,10 +12,12 @@ return new class extends Migration
             $table->id();
             $table->foreignId('category_id')->constrained()->onDelete('cascade');
             $table->string('name');
-            $table->integer('price');
+            $table->string('slug')->unique(); // ⭐ TAMBAHAN: untuk SEO-friendly URL
+            $table->integer('price'); // atau gunakan decimal(10,2) jika pakai desimal
             $table->text('description')->nullable();
             $table->string('image')->nullable();
-            $table->enum('status', ['available', 'out_of_stock'])->default('available');
+            $table->boolean('is_available')->default(true); // ⭐ UBAH: lebih fleksibel dari enum
+            $table->integer('sort_order')->default(0); // ⭐ TAMBAHAN: untuk urutan tampilan
             $table->timestamps();
         });
     }

@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->enum('role', ['admin', 'cashier'])->default('admin');
+            $table->enum('role', ['admin', 'cashier'])->default('cashier');
+            $table->boolean('is_active')->default(true); // ⭐ TAMBAHAN: untuk soft disable user
             $table->rememberToken();
             $table->timestamps();
         });
